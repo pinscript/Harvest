@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harvest.Tests", "Harvest.Tests\Harvest.Tests.csproj", "{F90262E1-C2F4-45E5-B250-C44A98B6BDBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harvest", "Harvest\Harvest.csproj", "{69C65157-7279-42C5-8EB9-9C603773B5F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harvest.Tryouts", "Harvest.Tryouts\Harvest.Tryouts.csproj", "{805F3DE9-24A9-4E4C-9DE5-F7B4E1C3CF96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harvest.Winforms", "Harvest.Winforms\Harvest.Winforms.csproj", "{033C047D-98BA-4038-8081-6F5E9911ED85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F90262E1-C2F4-45E5-B250-C44A98B6BDBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F90262E1-C2F4-45E5-B250-C44A98B6BDBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F90262E1-C2F4-45E5-B250-C44A98B6BDBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F90262E1-C2F4-45E5-B250-C44A98B6BDBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69C65157-7279-42C5-8EB9-9C603773B5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C65157-7279-42C5-8EB9-9C603773B5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C65157-7279-42C5-8EB9-9C603773B5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C65157-7279-42C5-8EB9-9C603773B5F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{805F3DE9-24A9-4E4C-9DE5-F7B4E1C3CF96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{805F3DE9-24A9-4E4C-9DE5-F7B4E1C3CF96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{805F3DE9-24A9-4E4C-9DE5-F7B4E1C3CF96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{805F3DE9-24A9-4E4C-9DE5-F7B4E1C3CF96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{033C047D-98BA-4038-8081-6F5E9911ED85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{033C047D-98BA-4038-8081-6F5E9911ED85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{033C047D-98BA-4038-8081-6F5E9911ED85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{033C047D-98BA-4038-8081-6F5E9911ED85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
