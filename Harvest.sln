@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harvest.Tests", "Harvest.Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harvest", "Harvest\Harvest.csproj", "{69C65157-7279-42C5-8EB9-9C603773B5F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harvest.Tryouts", "Harvest.Tryouts\Harvest.Tryouts.csproj", "{805F3DE9-24A9-4E4C-9DE5-F7B4E1C3CF96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{805F3DE9-24A9-4E4C-9DE5-F7B4E1C3CF96}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harvest.Winforms", "Harvest.Winforms\Harvest.Winforms.csproj", "{033C047D-98BA-4038-8081-6F5E9911ED85}"
 EndProject
