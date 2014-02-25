@@ -1,6 +1,6 @@
 What?
 ============
-Harvest is a C# library for web-crawling. With a lightweight and flexible architecture, it makes common crawling tasks easy.
+Harvest is a multithreaded C# library for web-crawling. With a lightweight and flexible architecture, it makes common crawling tasks easy.
 
 The API is minimal, and you can control pretty much everything.
 
