@@ -2,6 +2,8 @@ What?
 ============
 Harvest is a C# library for web-crawling. With a lightweight and flexible architecture, it makes common crawling tasks easy.
 
+The API is minimal, and you can control pretty much everything.
+
 Examples
 ============
 [https://github.com/alexandernyquist/Harvest/wiki/Crawling-a-site-for-all-external-links](Crawling a site for all external links)

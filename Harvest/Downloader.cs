@@ -41,9 +41,11 @@ namespace Harvest
                 var response = e.Response as HttpWebResponse;
                 if (response != null)
                 {
-                    DownloadedPage = new Page(Url, string.Empty);
-                    DownloadedPage.StatusCode = response.StatusCode;
-                    DownloadedPage.ContentType = response.ContentType;
+                    DownloadedPage = new Page(Url, string.Empty)
+                    {
+                        StatusCode = response.StatusCode,
+                        ContentType = response.ContentType
+                    };
                 }
 
                 Completed = true;
@@ -75,10 +77,12 @@ namespace Harvest
 
                     var httpWebResponse = (HttpWebResponse) httpResponseState.WebResponse;
 
-                    DownloadedPage = new Page(Url, html);
-                    DownloadedPage.Headers = httpWebResponse.Headers;
-                    DownloadedPage.StatusCode = httpWebResponse.StatusCode;
-                    DownloadedPage.ContentType = httpWebResponse.ContentType;
+                    DownloadedPage = new Page(Url, html)
+                    {
+                        Headers = httpWebResponse.Headers,
+                        StatusCode = httpWebResponse.StatusCode,
+                        ContentType = httpWebResponse.ContentType
+                    };
                 }
 
                 Completed = true;   
@@ -105,7 +109,7 @@ namespace Harvest
 
         private class HttpRequestState
         {
-            public WebRequest WebRequest { get; set; }
+            public WebRequest WebRequest { get; private set; }
 
             public HttpRequestState(WebRequest webRequest)
             {
@@ -115,9 +119,9 @@ namespace Harvest
 
         private class HttpResponseState
         {
-            public WebResponse WebResponse { get; set; }
-            public byte[] Buffer { get; set; }
-            public MemoryStream OutStream { get; set; }
+            public WebResponse WebResponse { get; private set; }
+            public byte[] Buffer { get; private set; }
+            public MemoryStream OutStream { get; private set; }
 
             public HttpResponseState(WebResponse webResponse, byte[] buffer, MemoryStream outStream)
             {

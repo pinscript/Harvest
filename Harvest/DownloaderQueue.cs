@@ -55,29 +55,29 @@ namespace Harvest
         public void Process()
         {
             ThreadStart enqueuerThreadMethod = () =>
+            {
+                var rand = new Random();
+                while (true)
                 {
-                    var rand = new Random();
-                    while (true)
+                    lock (_mutex)
                     {
-                        lock (_mutex)
+                        if (_queue.Any() && _executing.Count() < MaxConcurrency)
                         {
-                            if (_queue.Any() && _executing.Count() < MaxConcurrency)
+                            var fetcher = _queue[rand.Next(_queue.Count)];
+                            if (_executing.Any(x => x.Url == fetcher.Url))
                             {
-                                var fetcher = _queue[rand.Next(_queue.Count)];
-                                if (_executing.Any(x => x.Url == fetcher.Url))
-                                {
-                                    _queue.Remove(fetcher);
-                                }
-                                else
-                                {
-                                    _queue.Remove(fetcher);
-                                    _executing.Add(fetcher);
-                                    fetcher.StartFetch();
-                                }
+                                _queue.Remove(fetcher);
+                            }
+                            else
+                            {
+                                _queue.Remove(fetcher);
+                                _executing.Add(fetcher);
+                                fetcher.StartFetch();
                             }
                         }
                     }
-                };
+                }
+            };
 
             ThreadStart downloaderCompletionCheckMethod = () =>
             {
